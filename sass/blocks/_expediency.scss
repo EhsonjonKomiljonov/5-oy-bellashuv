@@ -1,0 +1,142 @@
+.expediency {
+  margin: 100px 0;
+  background-color: #e0eff6;
+}
+
+.expediency__inner {
+  padding: 100px 0;
+}
+
+.expediency__title {
+  margin: 0;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  text-align: center;
+  color: #07484a;
+}
+
+.expediency__list {
+  @include super-flex($items: flex-start);
+  margin: 104px 0 0;
+}
+
+.expediency__item {
+  width: 100%;
+  max-width: 289px;
+  &:nth-child(1)::before {
+    display: block;
+    width: 107.5px;
+    height: 107.5px;
+    margin: 0 auto;
+    background-image: url('../images/expediency-li1.svg');
+    background-position: center;
+    content: '';
+  }
+  &:nth-child(2)::before {
+    display: block;
+    width: 107.5px;
+    height: 107.5px;
+    margin: 0 auto;
+    background-image: url('../images/expediency-li2.svg');
+    background-position: center;
+    content: '';
+  }
+  &:nth-child(3)::before {
+    display: block;
+    width: 107.5px;
+    height: 107.5px;
+    margin: 0 auto;
+    background-image: url('../images/expediency-li3.svg');
+    background-position: center;
+    content: '';
+  }
+  &:nth-child(3) {
+    max-width: 308px;
+  }
+}
+
+.expediency__subtitle {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  color: #07484a;
+}
+
+.expediency__text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #07484a;
+}
+
+@include media(1024px) {
+  .expediency__item {
+    max-width: 240px;
+  }
+
+  .expediency__title {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  .expediency__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .expediency__text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@include media(750px) {
+  .expediency__item {
+    max-width: 200px !important;
+  }
+
+  .expediency__title {
+    font-size: 40px;
+    line-height: 62px;
+  }
+
+  .expediency__subtitle {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  .expediency__text {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+@include media(660px) {
+  .expediency__inner {
+    padding: 80px 0;
+  }
+
+  .expediency__title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .expediency__list {
+    width: 200px;
+    flex-direction: column;
+    margin: 104px auto 0;
+  }
+
+  .expediency__item + .expediency__item {
+    margin-top: 60px;
+  }
+}

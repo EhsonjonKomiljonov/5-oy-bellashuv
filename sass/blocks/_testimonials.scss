@@ -1,0 +1,114 @@
+.testimonials {
+  position: relative;
+  margin-bottom: 100px;
+  padding: 0 0 100px;
+}
+
+.testimonials__title {
+  margin: 0 0 35px;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  text-align: center;
+  color: #07484a;
+}
+
+.testimonials__text {
+  margin-bottom: 107px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #07484a;
+}
+
+.testimonials__inner::before {
+  position: absolute;
+  top: -77px;
+  left: -81px;
+  z-index: 4;
+  width: 161px;
+  height: 121px;
+  background-image: url('../images/quote.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+}
+
+.testimonials__carousel {
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonials__content {
+  width: 100%;
+  max-width: 964px;
+}
+
+.testimonials__desc {
+  margin-bottom: 65px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  color: #07484a;
+}
+
+.testimonials__ceo {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #07484a;
+}
+
+.testimonials__ceo-flatacom {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #07484a;
+}
+
+.slick-btn::before {
+  position: absolute;
+  top: 0;
+}
+
+#see-all {
+  position: absolute;
+  right: calc(50% - 750px);
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #07484a;
+
+  &::after {
+    display: block;
+    width: 19px;
+    height: 13px;
+    margin-left: 17px;
+    background-image: url('../images/arrow-right-black.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+  }
+}
+
+@include media (1500px) {
+  .testimonials {
+    display: none;
+  }
+}

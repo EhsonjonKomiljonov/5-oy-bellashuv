@@ -1,0 +1,58 @@
+// Playfair Display
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+    url('../fonts/playfair-display-v30-latin-regular.woff2') format('woff2'),
+    url('../fonts/playfair-display-v30-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+    url('../fonts/playfair-display-v30-latin-700.woff2') format('woff2'),
+    url('../fonts/playfair-display-v30-latin-700.woff') format('woff');
+}
+
+// Roboto
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-700.woff') format('woff');
+}
+
+// Open Sans
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'),
+    url('../fonts/open-sans-v34-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'),
+    url('../fonts/open-sans-v34-latin-700.woff') format('woff');
+}

@@ -1,0 +1,20 @@
+:root {
+  --modal-display: none;
+  --modal-bg-top: 100%;
+  --modal-bg-right: 100%;
+  --modal-bg-bottom: 100%;
+  --modal-bg-left: 100%;
+  --menu-position: translateY(-110%)
+}
+
+.open-menu {
+  --menu-position: translateY(0);
+}
+
+.modal-open {
+  --modal-display: block;
+  --modal-bg-top: 0;
+  --modal-bg-right: 0;
+  --modal-bg-bottom: 0;
+  --modal-bg-left: 0;
+}

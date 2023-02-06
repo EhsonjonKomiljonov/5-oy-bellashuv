@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>InWood</title>
+    <link
+      rel="stylesheet"
+      href="./slick-1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/main.min.css"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div class="site-header__top">
+          <div class="container">
+            <div class="site-header__top__inner">
+              <div class="responsive-design-style">
+                <a href="./index.html">
+                  <img
+                    src="./images/logo.svg"
+                    alt="Logo"
+                  />
+                </a>
+                <nav class="nav">
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <a
+                        href="#"
+                        class="nav__link active-page"
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="#"
+                        class="nav__link"
+                      >
+                        Products
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="#"
+                        class="nav__link"
+                      >
+                        Categories
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="#"
+                        class="nav__link"
+                      >
+                        About
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="#"
+                        class="nav__link"
+                      >
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <button
+                  class="menu-btn"
+                  onclick="openMenu()"
+                ></button>
+              </div>
+              <div class="menu">
+                <button
+                  class="menu__close"
+                  onclick="closeMenu()
+                "
+                ></button>
+                <ul class="menu__main__list">
+                  <li class="menu__main__item">
+                    <a
+                      class="menu__main-links"
+                      href="#"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li class="menu__main__item">
+                    <a
+                      class="menu__main-links"
+                      href="#"
+                    >
+                      Products
+                    </a>
+                  </li>
+                  <li class="menu__main__item">
+                    <a
+                      class="menu__main-links"
+                      href="#"
+                    >
+                      Category
+                    </a>
+                  </li>
+                  <li class="menu__main__item">
+                    <a
+                      class="menu__main-links"
+                      href="#"
+                    >
+                      About us
+                    </a>
+                  </li>
+                  <li class="menu__main__item">
+                    <a
+                      class="menu__main-links"
+                      href="#"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="icon__list">
+                <li class="icons__item">
+                  <a
+                    class="icons__link"
+                    href="#"
+                  >
+                    <img
+                      src="./images/search-icon.svg"
+                      alt="Search"
+                    />
+                  </a>
+                </li>
+                <li class="icons__item">
+                  <a
+                    class="icons__link"
+                    href="#"
+                  >
+                    <img
+                      src="./images/bookmark-icon.svg"
+                      alt="Bookmark"
+                    />
+                  </a>
+                </li>
+                <li class="icons__item">
+                  <a
+                    class="icons__link"
+                    href="#"
+                    onclick="openModal()"
+                  >
+                    <img
+                      src="./images/user-account-icon.svg"
+                      alt="User Account"
+                    />
+                  </a>
+                  <div
+                    class="modal-bg"
+                    onclick="closeModal()"
+                  ></div>
+                  <div class="modal">
+                    <div class="modal__header">
+                      <strong class="modal__title">login</strong>
+                      <button
+                        class="modal__exit"
+                        onclick="closeModal()"
+                      ></button>
+                    </div>
+                    <form
+                      class="modal__login"
+                      action="https://echo.htmlacademy.ru/"
+                      method="POST"
+                      autocomplete="off"
+                    >
+                      <input
+                        name="user-name"
+                        class="modal__input"
+                        id="user-name"
+                        type="text"
+                        placeholder="User Name"
+                        aria-label="User name"
+                      />
+                      <label for="user-name"></label>
+                      <input
+                        name="user-password"
+                        class="modal__input modal__user-password"
+                        id="user-password"
+                        type="text"
+                        placeholder="Password"
+                        aria-label="Password"
+                      />
+                      <label for="user-password"></label>
+                      <button
+                        class="modal__btn"
+                        type="submit"
+                      >
+                        Log in
+                      </button>
+                    </form>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="site-header__bottom">
+          <div class="container">
+            <div class="site-header__bottom__inner">
+              <h1 class="site-header__bottom__title">
+                Exclusive Deals of Furniture Collection
+              </h1>
+              <p class="site-header__bottom__text">
+                Explore different categories. Find the best deals.
+              </p>
+              <a
+                class="site-header__bottom__btn"
+                href="#"
+              >
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="category">
+        <div class="container">
+          <h2
+            class="category__title"
+            title="Explore by Category"
+          >
+            Explore by Category
+          </h2>
+          <div class="category__inner">
+            <div class="category__overflow__box__left">
+              <label
+                class="category__overflow__label"
+                for="category__overflow__input"
+              >
+              </label>
+              <input
+                type="text"
+                name="product"
+                class="category__overflow__input"
+                placeholder="Search"
+                id="category__overflow__input"
+              />
+              <ul class="category__overflow__list">
+                <li class="category__overflow__item">Bedroom</li>
+                <li class="category__overflow__item">Dinning Room</li>
+                <li class="category__overflow__item">Meeting Room</li>
+                <li class="category__overflow__item">Workspace</li>
+                <li class="category__overflow__item">Living Room</li>
+                <li class="category__overflow__item">Kitchen</li>
+                <li
+                  class="category__overflow__item category__overflow__item__to__none__mobile"
+                >
+                  Living Space
+                </li>
+                <li
+                  class="category__overflow__item category__overflow__item__to__none"
+                >
+                  Living Space
+                </li>
+                <li
+                  class="category__overflow__item category__overflow__item__to__none"
+                >
+                  Bedroom
+                </li>
+                <li
+                  class="category__overflow__item category__overflow__item__to__none"
+                >
+                  Dinning Room
+                </li>
+              </ul>
+              <button class="category__button">All Categories</button>
+            </div>
+            <div class="category__overflow__box__right">
+              <ul class="category__list">
+                <li class="category__item">
+                  <div class="category__transform">
+                    <h2 class="category__item__title">Bedroom</h2>
+                    <button class="category__item__btn">Explore</button>
+                  </div>
+                </li>
+                <li class="category__item"></li>
+                <li class="category__item"></li>
+                <li class="category__item"></li>
+                <li class="category__item"></li>
+                <li class="category__item"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="products">
+        <div class="container">
+          <h2
+            title="Popular Products"
+            class="products__title"
+          >
+            Popular Products
+          </h2>
+          <div class="products__inner">
+            <div class="products__carousel">
+              <div class="products__carousel__item">
+                <h4 class="products__carousel__item__title">Armchair</h4>
+                <span class="products__carousel__item__text"
+                  >Light single chair <strong>$145</strong></span
+                >
+              </div>
+              <div class="products__carousel__item__second">
+                <h4 class="products__carousel__item__title">Premium Sofa</h4>
+                <span class="products__carousel__item__text"
+                  >Light single chair <strong>$145</strong></span
+                >
+              </div>
+              <div class="products__carousel__item__third">
+                <h4 class="products__carousel__item__title">Minimal Sofa</h4>
+                <span class="products__carousel__item__text"
+                  >Light single chair <strong>$145</strong></span
+                >
+              </div>
+              <div class="products__carousel__item__fourth">
+                <h4 class="products__carousel__item__title">Dining Chair</h4>
+                <span class="products__carousel__item__text"
+                  >Light single chair <strong>$145</strong></span
+                >
+              </div>
+              <div class="products__carousel__item">
+                <h4 class="products__carousel__item__title">Armchair</h4>
+                <span class="products__carousel__item__text"
+                  >Light single chair <strong>$145</strong></span
+                >
+              </div>
+              <div class="products__carousel__item__second">
+                <h4 class="products__carousel__item__title">Premium Sofa</h4>
+                <span class="products__carousel__item__text"
+                  >Light single chair <strong>$145</strong></span
+                >
+              </div>
+              <div class="products__carousel__item__third">
+                <h4 class="products__carousel__item__title">Minimal Sofa</h4>
+                <span class="products__carousel__item__text"
+                  >Light single chair <strong>$145</strong></span
+                >
+              </div>
+              <div class="products__carousel__item__fourth">
+                <h4 class="products__carousel__item__title">Dining Chair</h4>
+                <span class="products__carousel__item__text"
+                  >Light single chair <strong>$145</strong></span
+                >
+              </div>
+            </div>
+          </div>
+          <button class="category__button__second">Explore all items</button>
+        </div>
+      </section>
+      <section class="expediency">
+        <div class="container">
+          <div class="expediency__inner">
+            <h2 class="expediency__title">Benefits for your expediency</h2>
+            <ul class="expediency__list">
+              <li class="expediency__item">
+                <h3 class="expediency__subtitle">Payment Method</h3>
+                <p class="expediency__text">
+                  We offer flexible payment options, to make easier.
+                </p>
+              </li>
+              <li class="expediency__item">
+                <h3 class="expediency__subtitle">Return policy</h3>
+                <p class="expediency__text">
+                  You can return a product within 30 days.
+                </p>
+              </li>
+              <li class="expediency__item">
+                <h3 class="expediency__subtitle">Customer Support</h3>
+                <p class="expediency__text">Our customer support is 24/7.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="container">
+          <h2 class="testimonials__title">Testimonials</h2>
+          <p class="testimonials__text">Over 15,000 happy customers.</p>
+          <div class="testimonials__inner">
+            <div class="testimonials__carousel">
+              <img
+                src="./images/testimonials-item1.jpg"
+                alt="Image"
+              />
+              <div class="testimonials__content">
+                <p class="testimonials__desc">
+                  “My experience with Mark is a complete sucess, from customer
+                  service, wide range of products, clean store, purchasing
+                  experience, the newsletter.Thank you.”
+                </p>
+                <strong class="testimonials__ceo"> Leona Paul </strong>
+                <p class="testimonials__ceo-flatacom">CEO of Floatcom</p>
+              </div>
+            </div>
+            <div class="testimonials__carousel">
+              <img
+                src="./images/testimonials-item1.jpg"
+                alt="Image"
+              />
+              <div class="testimonials__content">
+                <p class="testimonials__desc">
+                  “My experience with Mark is a complete sucess, from customer
+                  service, wide range of products, clean store, purchasing
+                  experience, the newsletter.Thank you.”
+                </p>
+                <strong class="testimonials__ceo"> Leona Paul </strong>
+                <p class="testimonials__ceo-flatacom">CEO of Floatcom</p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="see-all"
+            href="#"
+            >See all review</a
+          >
+        </div>
+      </section>
+      <section class="join">
+        <img
+          src="./images/join-img.jpg"
+          alt="Join"
+        />
+        <div class="join__def">
+          <h1>Join Our <span>Newsletter</span></h1>
+          <p>Receive exclusive deals, discounts and many offers.</p>
+          <form action="https://echo.htmlacademy.ru/">
+            <input
+              name="user_email"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="top">
+        <div class="logo">
+          <a href="./index.html"
+            ><img
+              src="./images/logo-footer.svg"
+              alt="logo"
+          /></a>
+          <div class="icons">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+            >
+              <img
+                src="./images/facebook-icon.svg"
+                alt="Facebook"
+              />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+            >
+              <img
+                src="./images/instagram-icon.svg"
+                alt="Instagram"
+              />
+            </a>
+            <a
+              href="https://linkedin.ru"
+              target="_blank"
+            >
+              <img
+                src="./images/linkedin-icon.svg"
+                alt="Linkedin"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./images/icon-ball.svg"
+                alt="ball"
+              />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+            >
+              <img
+                src="./images/twitter-icon.svg"
+                alt="Twitter"
+              />
+            </a>
+          </div>
+          <div class="address-box">
+            <p>
+              <strong>Address</strong>
+              <a href="tel:+123654987877"> +123 654 987 877 </a>
+            </p>
+            <address class="address">
+              <span>The Bronx, NY</span> 14568, USA
+            </address>
+          </div>
+        </div>
+        <div class="links">
+          <strong class="title">My Account</strong>
+          <a href="#">Sign in</a>
+          <a href="#">Register</a>
+          <a href="#">Order status</a>
+        </div>
+        <div class="links">
+          <strong class="title">Help</strong>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Sizing</a>
+        </div>
+        <div class="links">
+          <strong class="title">Shop</strong>
+          <a href="#">All Products</a>
+          <a href="#">Bedroom</a>
+          <a href="#">Dinning Room</a>
+        </div>
+        <div class="links">
+          <strong class="title">Legal Stuff</strong>
+          <a href="#">Shipping & Delivery</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy & Policy</a>
+        </div>
+      </div>
+      <small class="bottom">Copyright ©2020 INWOOD. All Rights Reserved</small>
+    </footer>
+    <a
+      id="arrowup"
+      href="#"
+      >↑</a
+    >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

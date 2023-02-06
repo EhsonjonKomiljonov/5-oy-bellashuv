@@ -1,0 +1,11 @@
+@mixin super-flex ($display:flex,$items:center,$justify:space-between) {
+  display: $display;
+  align-items: $items;
+  justify-content: $justify;
+}
+
+@mixin media ($width) {
+  @media only screen and (max-width:$width) {
+    @content;
+  }
+}
